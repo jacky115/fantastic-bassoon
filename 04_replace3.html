@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str="    zhang   dong    ";
+        function left_trim(str){
+            return str.replace(/^\s+/,"")
+        }
+        console.log(left_trim(str));
+        //去掉结尾的空字符
+        function right_trim(str){
+            return str.replace(/\s+$/,"")
+        }
+        console.log(right_trim(str));
+        //去掉头和尾的空字符
+        function while_trim(str){
+            return str.replace(/^\s+|\s+$/g,"")
+        } 
+        console.log(while_trim(str));
+    </script>
+</body>
+</html>
